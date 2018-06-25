@@ -15,6 +15,7 @@ class App {
         // dashboard
         "dashboard"=>["dashboardController", "index"],
         "dashboard/clientes"=>["dashboardController", "clientes"],
+        "dashboard/clientes/submitCliente"=>["dashboardController", "submitCliente"],
     ];
 
     public function __construct() {

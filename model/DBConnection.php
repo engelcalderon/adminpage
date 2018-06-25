@@ -3,8 +3,13 @@
 class DBConnection {
     
     public function connect() {
-        $link = new PDO("mysql:host=localhost;dbname=adminlte","root","");
-        return $link;
+        try {
+            $link = new PDO("mysql:host=localhost;dbname=adminlte","root","");
+            return $link;
+        }
+        catch(Exception $e) {
+            echo $e;
+        }
     }
 }
 
