@@ -8,6 +8,13 @@ class dashboardController extends Controller {
         ]);
         $this->view->render();
     }
+
+    public function clientes() {
+        $this->view("dashboard/usuarios/clientes", [
+            "title" => "Clientes"
+        ]);
+        $this->view->render();
+    }
 }
 
 ?>

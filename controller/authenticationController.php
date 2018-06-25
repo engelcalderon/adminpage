@@ -3,12 +3,11 @@
 class authenticationController extends Controller {
 
     public function login() {
-        session_start();
+        // session_start();
         $this->view("authentication/login", [
-            "title" => "Login",
-            "error" => $_SESSION["loginError"]
+            "title" => "Login"
         ]);
-        $_SESSION["loginError"] = null;
+        // $_SESSION["loginError"] = null; 
         $this->view->render();
     }
 

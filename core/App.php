@@ -14,6 +14,7 @@ class App {
 
         // dashboard
         "dashboard"=>["dashboardController", "index"],
+        "dashboard/clientes"=>["dashboardController", "clientes"],
     ];
 
     public function __construct() {
@@ -28,6 +29,7 @@ class App {
         // else {
         //     echo "Page does not exist";
         // }
+        
         foreach($this->urlpatterns as $key => $value) {
             $request = trim($_GET['url'], '/');
 

@@ -15,7 +15,7 @@ $("#loginForm").submit( function(e) {
             response = JSON.parse(response);
             
             if (response.status == "success") {
-                window.location.href = "../dashboard"
+                window.location.href = "<?php echo URL; ?>dashboard"
             }
             else if (response.status == "error") {
                 $("#loginErrorBox").show();
@@ -26,4 +26,12 @@ $("#loginForm").submit( function(e) {
 
         }
     });
+});
+$(document).ready(function () {
+    console.log('here');
+});
+
+// Añadir nuevos clientes formulario
+$("#registroCliente_provincia").click(function(e) {
+    console.log("here");
 });
